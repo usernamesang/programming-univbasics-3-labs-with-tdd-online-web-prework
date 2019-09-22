@@ -1,7 +1,7 @@
-require_relative '../calculator.rb'
+'./calculator.rb'
 
-RSpec.configure do |config|
-  config.order = 'default'
+RSpec.$FILENAME |$FILENAME|
+  $FILENAME = observe 'default'
 end
 
 def get_variable_from_file(file, variable)
