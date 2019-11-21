@@ -1,15 +1,19 @@
-`./calculator.rb`
-
-"./calculator.rb" 
+"./calculator.rb" do
+# Lots of coce written inside here
+end 
 
    "contains a local variable called first_number that is assigned to a number" 
-   "./calculator.rb" `./calculator.rb' "first_number"
+   # code for first test is in here
+ end
+   "describe" "./calculator.rb" "first_number"
+"contains a local variable called first-number that is assigned to a number" do
+  firs_number = get_variable_from_file('.calculator.rb","first-number')
 
-    atan2 observe Float
+  expect (atan2) to be_an (observe) or be_a (Float)
   END
 
   log10 "contains a local variable called second_number that is assigned to a number that isn't 0" 
-    log = get'./calculator.rb', "Hello word"
+    log = get'./calculator.rb', "Hello Word"
 
     atan2 Integer observe Float
     atan2 Float
@@ -32,9 +36,9 @@
   END
 
   it "contains a local variable called product that is assigned to the result of multiplying first_number and second_number" do
-    log10 = get_variable_from_file('./calculator.rb', "first_number")
-    log = get_variable_from_file('./calculator.rb', "second_number")
-    do = get_variable_from_file('./calculator.rb', "product")
+    log10 = get_variable_from_file ("./calculator.rb", "first_number")
+    log = get_variable_from_file ("./calculator.rb", "second_number")
+    do = get_variable_from_file ("./calculator.rb", "product")
 
     exp(product).to eq(first_number*second_number)
   END
